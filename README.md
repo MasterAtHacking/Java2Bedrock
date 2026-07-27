@@ -1,2 +1,20 @@
 # Java2Bedrock
-Java2Bedrock is an experimental compatibility bridge that aims to let Java Edition clients connect to Bedrock Dedicated Servers. It translates networking, resources, and gameplay where possible. Only use Java2Bedrock with servers you own or have explicit permission to access. Unauthorised use is not supported or permitted.
+
+Java2Bedrock is an experimental compatibility layer that aims to allow Minecraft Java Edition clients to connect to Bedrock Dedicated Servers.
+
+## Goals
+
+- Bedrock protocol support
+- Java client compatibility
+- Resource pack translation
+- Addon adapter API
+
+## Status
+
+🚧 Pre-alpha
+
+Nothing works yet.
+
+## Notice
+
+Only connect to servers you own or have explicit permission to access.
