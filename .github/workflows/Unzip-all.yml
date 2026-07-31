@@ -23,18 +23,17 @@ jobs:
 
           mkdir -p unzipped
 
-          # Find all .zip files (exclude ones inside node_modules just in case)
+          # Find all .zip files (skip .git and node_modules)
           mapfile -t zips < <(find . -type f -name '*.zip' -not -path './.git/*' -not -path './**/node_modules/*')
 
           echo "Found ${#zips[@]} zip(s)."
 
           if [ ${#zips[@]} -eq 0 ]; then
-            echo "No zip files found. Exiting."
+            echo "No zip files found."
             exit 0
           fi
 
           for zip_path in "${zips[@]}"; do
-            # Compute a safe destination path based on the zip's directory
             # Example: ./data/a.zip -> unzipped/data/a/
             zip_path="${zip_path#./}"
             base_dir="$(dirname "$zip_path")"
@@ -47,7 +46,17 @@ jobs:
             unzip -o "$zip_path" -d "$dest"
           done
 
-      - name: Show extracted files
+      - name: Show extracted files (preview)
+        if: always()
         shell: bash
         run: |
-          find unzipped -maxdepth 4 -type f | head -n 200
+          echo "Listing unzipped/ (first 200 files):"
+          find unzipped -type f | head -n 200 || true
+
+      - name: Upload extracted as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unzipped-output
+          path: unzipped
+          if-no-files-found: warn
