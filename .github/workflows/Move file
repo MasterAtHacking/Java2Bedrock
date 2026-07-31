@@ -1,0 +1,31 @@
+name: Move folder
+
+on:
+  workflow_dispatch:
+
+jobs:
+  move:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Move folder
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git mv unzipped/java2bedrock/java2bedrock ~
+
+      - name: Commit and push
+        run: |
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Move folder: old-dir -> new-dir"
+          git push
