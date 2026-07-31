@@ -1,0 +1,53 @@
+name: Scan repo for zips and unzip
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  unzip-all:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install unzip
+        run: sudo apt-get update && sudo apt-get install -y unzip
+
+      - name: Find and unzip all .zip files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mkdir -p unzipped
+
+          # Find all .zip files (exclude ones inside node_modules just in case)
+          mapfile -t zips < <(find . -type f -name '*.zip' -not -path './.git/*' -not -path './**/node_modules/*')
+
+          echo "Found ${#zips[@]} zip(s)."
+
+          if [ ${#zips[@]} -eq 0 ]; then
+            echo "No zip files found. Exiting."
+            exit 0
+          fi
+
+          for zip_path in "${zips[@]}"; do
+            # Compute a safe destination path based on the zip's directory
+            # Example: ./data/a.zip -> unzipped/data/a/
+            zip_path="${zip_path#./}"
+            base_dir="$(dirname "$zip_path")"
+            zip_name="$(basename "$zip_path" .zip)"
+
+            dest="unzipped/${base_dir}/${zip_name}"
+            mkdir -p "$dest"
+
+            echo "Unzipping $zip_path -> $dest"
+            unzip -o "$zip_path" -d "$dest"
+          done
+
+      - name: Show extracted files
+        shell: bash
+        run: |
+          find unzipped -maxdepth 4 -type f | head -n 200
