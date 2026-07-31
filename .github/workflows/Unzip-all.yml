@@ -1,62 +1,74 @@
-name: Scan repo for zips and unzip to home
+name: Scan repo for zips and unzip into repo
 
 on:
   workflow_dispatch:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write
+
 jobs:
-  unzip-all:
+  unzip-all-and-commit:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Install unzip
         run: sudo apt-get update && sudo apt-get install -y unzip
 
-      - name: Find and unzip all .zip files
+      - name: Find and unzip all .zip files into ./unzipped
         shell: bash
         run: |
           set -euo pipefail
 
-          DEST_ROOT="$HOME/unzipped"
-          mkdir -p "$DEST_ROOT"
+          mkdir -p unzipped
 
-          # Find all .zip files (skip .git and node_modules)
           mapfile -t zips < <(find . -type f -name '*.zip' -not -path './.git/*' -not -path './**/node_modules/*')
 
           echo "Found ${#zips[@]} zip(s)."
+
           if [ ${#zips[@]} -eq 0 ]; then
-            echo "No zip files found."
+            echo "No zip files found. Exiting."
             exit 0
           fi
 
           for zip_path in "${zips[@]}"; do
-            # Compute destination based on zip's directory
             zip_rel="${zip_path#./}"
             base_dir="$(dirname "$zip_rel")"
             zip_name="$(basename "$zip_rel" .zip)"
 
-            dest="$DEST_ROOT/${base_dir}/${zip_name}"
+            dest="unzipped/${base_dir}/${zip_name}"
             mkdir -p "$dest"
 
             echo "Unzipping $zip_path -> $dest"
             unzip -o "$zip_path" -d "$dest"
           done
 
-      - name: List extracted files (preview)
-        if: always()
+      - name: Commit extracted files (if changed)
         shell: bash
         run: |
-          echo "Listing $HOME/unzipped/ (first 200 files):"
-          find "$HOME/unzipped" -type f | head -n 200 || true
+          set -euo pipefail
 
-      - name: Upload extracted as artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: unzipped-output
-          path: $HOME/unzipped
-          if-no-files-found: warn
+          if git status --porcelain | grep -q '^'; then
+            echo "Changes detected, committing..."
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Add only extracted output folder (customize if you want)
+          git add unzipped || true
+
+          # If nothing changed, exit without failing
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Auto-unzip repository zip files" || exit 0
+          git push
