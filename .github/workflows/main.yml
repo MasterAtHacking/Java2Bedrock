@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "Java2Bedrock/*.zip"
+      - "~/*.zip"
 
 jobs:
   unzip:
@@ -21,7 +21,7 @@ jobs:
       - name: Unzip
         run: |
           mkdir -p extracted
-          unzip -o "Java2Bedrock/java2bedrock.zip" -d extracted
+          unzip -o "~/java2bedrock.zip" -d extracted
 
       - name: Configure git
         run: |
