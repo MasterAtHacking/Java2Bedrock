@@ -1,4 +1,4 @@
-name: Move folder
+name: Move Java2Bedrock to repo root
 
 on:
   workflow_dispatch:
@@ -15,11 +15,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Move folder
+      - name: Move folder to home (repo root)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git mv unzipped/java2bedrock/java2bedrock ~
+
+          # Move unzipped/java2bedrock/java2bedrock -> ./Java2Bedrock
+          git mv unzipped/java2bedrock/java2bedrock Java2Bedrock
 
       - name: Commit and push
         run: |
@@ -27,5 +29,5 @@ jobs:
             echo "No changes to commit."
             exit 0
           fi
-          git commit -m "Move folder: old-dir -> new-dir"
+          git commit -m "Move Java2Bedrock from unzipped into repo root"
           git push
