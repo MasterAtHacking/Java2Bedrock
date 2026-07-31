@@ -21,7 +21,7 @@ jobs:
       - name: Unzip
         run: |
           mkdir -p extracted
-          unzip -o "uploads/myfolder.zip" -d extracted
+          unzip -o "Java2Bedrock/java2bedrock.zip" -d extracted
 
       - name: Configure git
         run: |
