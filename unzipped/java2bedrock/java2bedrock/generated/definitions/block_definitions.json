@@ -1,0 +1,104 @@
+{
+    "minecraft:air": {
+        "id": "minecraft:air",
+        "metadata": {
+            "id": "minecraft:air"
+        },
+        "resources": [],
+        "states": {}
+    },
+    "minecraft:cobblestone": {
+        "id": "minecraft:cobblestone",
+        "metadata": {
+            "id": "minecraft:cobblestone"
+        },
+        "resources": [],
+        "states": {}
+    },
+    "minecraft:dirt": {
+        "id": "minecraft:dirt",
+        "metadata": {
+            "id": "minecraft:dirt"
+        },
+        "resources": [],
+        "states": {}
+    },
+    "minecraft:grass_block": {
+        "id": "minecraft:grass_block",
+        "metadata": {
+            "id": "minecraft:grass_block"
+        },
+        "resources": [],
+        "states": {}
+    },
+    "minecraft:oak_log": {
+        "id": "minecraft:oak_log",
+        "metadata": {
+            "id": "minecraft:oak_log"
+        },
+        "resources": [],
+        "states": {}
+    },
+    "minecraft:oak_planks": {
+        "id": "minecraft:oak_planks",
+        "metadata": {
+            "id": "minecraft:oak_planks"
+        },
+        "resources": [],
+        "states": {}
+    },
+    "minecraft:stone": {
+        "id": "minecraft:stone",
+        "metadata": {
+            "id": "minecraft:stone"
+        },
+        "resources": [],
+        "states": {}
+    },
+    "test:test_block": {
+        "id": "test:test_block",
+        "metadata": {
+            "components": {
+                "minecraft:destructible_by_explosion": {
+                    "explosion_resistance": 10
+                },
+                "minecraft:destructible_by_mining": {
+                    "seconds_to_destroy": 5
+                },
+                "minecraft:friction": 0.6
+            },
+            "explosion_resistance": 10,
+            "friction": 0.6,
+            "hardness": 5,
+            "id": "test:test_block"
+        },
+        "resources": [
+            "textures/blocks/test_block.png"
+        ],
+        "states": {
+            "permutations": [
+                {
+                    "components": {
+                        "minecraft:light_emission": 15
+                    },
+                    "condition": "q.block_property('test:powered') == true"
+                },
+                {
+                    "components": {
+                        "minecraft:light_emission": 0
+                    },
+                    "condition": "q.block_property('test:powered') == false"
+                }
+            ],
+            "properties": {
+                "test:powered": {
+                    "type": "boolean",
+                    "values": [
+                        false,
+                        true
+                    ]
+                }
+            }
+        }
+    }
+}

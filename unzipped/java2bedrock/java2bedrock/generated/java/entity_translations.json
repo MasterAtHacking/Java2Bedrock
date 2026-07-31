@@ -1,0 +1,17 @@
+{
+    "test:test_entity": {
+        "bedrock_id": "test:test_entity",
+        "java_id": "test_test_entity",
+        "metadata": {
+            "components": {
+                "minecraft:health": {
+                    "value": 50
+                }
+            },
+            "id": "test:test_entity"
+        },
+        "resources": [
+            "textures/entity/test_entity.png"
+        ]
+    }
+}

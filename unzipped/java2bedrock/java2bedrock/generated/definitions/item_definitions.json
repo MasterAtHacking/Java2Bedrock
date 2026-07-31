@@ -1,0 +1,14 @@
+{
+    "test:test_item": {
+        "id": "test:test_item",
+        "metadata": {
+            "components": {
+                "minecraft:max_stack_size": 16
+            },
+            "id": "test:test_item"
+        },
+        "resources": [
+            "textures/items/test_item.png"
+        ]
+    }
+}
