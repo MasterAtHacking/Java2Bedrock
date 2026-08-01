@@ -1,0 +1,27 @@
+{
+    "test:test_block": {
+        "permutations": [
+            {
+                "components": {
+                    "minecraft:light_emission": 15
+                },
+                "condition": "q.block_property('test:powered') == true"
+            },
+            {
+                "components": {
+                    "minecraft:light_emission": 0
+                },
+                "condition": "q.block_property('test:powered') == false"
+            }
+        ],
+        "properties": {
+            "test:powered": {
+                "type": "boolean",
+                "values": [
+                    false,
+                    true
+                ]
+            }
+        }
+    }
+}

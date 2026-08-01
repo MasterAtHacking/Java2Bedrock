@@ -1,0 +1,112 @@
+{
+    "minecraft:air": {
+        "bedrock_id": "minecraft:air",
+        "java_id": "minecraft_air",
+        "metadata": {
+            "id": "minecraft:air"
+        },
+        "properties": {},
+        "resources": []
+    },
+    "minecraft:cobblestone": {
+        "bedrock_id": "minecraft:cobblestone",
+        "java_id": "minecraft_cobblestone",
+        "metadata": {
+            "id": "minecraft:cobblestone"
+        },
+        "properties": {},
+        "resources": []
+    },
+    "minecraft:dirt": {
+        "bedrock_id": "minecraft:dirt",
+        "java_id": "minecraft_dirt",
+        "metadata": {
+            "id": "minecraft:dirt"
+        },
+        "properties": {},
+        "resources": []
+    },
+    "minecraft:grass_block": {
+        "bedrock_id": "minecraft:grass_block",
+        "java_id": "minecraft_grass_block",
+        "metadata": {
+            "id": "minecraft:grass_block"
+        },
+        "properties": {},
+        "resources": []
+    },
+    "minecraft:oak_log": {
+        "bedrock_id": "minecraft:oak_log",
+        "java_id": "minecraft_oak_log",
+        "metadata": {
+            "id": "minecraft:oak_log"
+        },
+        "properties": {},
+        "resources": []
+    },
+    "minecraft:oak_planks": {
+        "bedrock_id": "minecraft:oak_planks",
+        "java_id": "minecraft_oak_planks",
+        "metadata": {
+            "id": "minecraft:oak_planks"
+        },
+        "properties": {},
+        "resources": []
+    },
+    "minecraft:stone": {
+        "bedrock_id": "minecraft:stone",
+        "java_id": "minecraft_stone",
+        "metadata": {
+            "id": "minecraft:stone"
+        },
+        "properties": {},
+        "resources": []
+    },
+    "test:test_block": {
+        "bedrock_id": "test:test_block",
+        "java_id": "test_test_block",
+        "metadata": {
+            "components": {
+                "minecraft:destructible_by_explosion": {
+                    "explosion_resistance": 10
+                },
+                "minecraft:destructible_by_mining": {
+                    "seconds_to_destroy": 5
+                },
+                "minecraft:friction": 0.6
+            },
+            "explosion_resistance": 10,
+            "friction": 0.6,
+            "hardness": 5,
+            "id": "test:test_block"
+        },
+        "properties": {
+            "permutations": [
+                {
+                    "components": {
+                        "minecraft:light_emission": 15
+                    },
+                    "condition": "q.block_property('test:powered') == true"
+                },
+                {
+                    "components": {
+                        "minecraft:light_emission": 0
+                    },
+                    "condition": "q.block_property('test:powered') == false"
+                }
+            ],
+            "properties": {
+                "test:powered": {
+                    "type": "boolean",
+                    "values": [
+                        false,
+                        true
+                    ]
+                }
+            }
+        },
+        "resources": [
+            "textures/blocks/test_block.png"
+        ]
+    }
+}

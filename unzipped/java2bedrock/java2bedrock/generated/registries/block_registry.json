@@ -1,0 +1,38 @@
+{
+    "minecraft:air": {
+        "id": "minecraft:air"
+    },
+    "minecraft:cobblestone": {
+        "id": "minecraft:cobblestone"
+    },
+    "minecraft:dirt": {
+        "id": "minecraft:dirt"
+    },
+    "minecraft:grass_block": {
+        "id": "minecraft:grass_block"
+    },
+    "minecraft:oak_log": {
+        "id": "minecraft:oak_log"
+    },
+    "minecraft:oak_planks": {
+        "id": "minecraft:oak_planks"
+    },
+    "minecraft:stone": {
+        "id": "minecraft:stone"
+    },
+    "test:test_block": {
+        "components": {
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 10
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 5
+            },
+            "minecraft:friction": 0.6
+        },
+        "explosion_resistance": 10,
+        "friction": 0.6,
+        "hardness": 5,
+        "id": "test:test_block"
+    }
+}
