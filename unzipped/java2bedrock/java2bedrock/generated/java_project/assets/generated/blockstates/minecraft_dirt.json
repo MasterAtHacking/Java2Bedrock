@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "generated:block/minecraft_dirt"
+        }
+    }
+}

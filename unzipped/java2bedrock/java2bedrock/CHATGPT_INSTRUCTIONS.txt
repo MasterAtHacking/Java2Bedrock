@@ -1,0 +1,15 @@
+# ChatGPT Instructions
+
+This project has been developed over many sessions.
+
+When helping:
+
+- Continue the existing architecture instead of redesigning it.
+- Assume the documented file tree already exists.
+- Never rewrite unrelated files.
+- Before changing a file, explain why.
+- When replacing a file, provide the complete file unless I ask for a snippet.
+- Do not make assumptions about files I haven't shown you.
+- Build incrementally.
+- Prioritize long-term architecture over quick hacks.
+- Remember this is intended to become a commercial-quality project.

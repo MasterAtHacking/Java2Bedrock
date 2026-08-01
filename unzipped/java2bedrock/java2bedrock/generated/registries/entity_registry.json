@@ -1,0 +1,10 @@
+{
+    "test:test_entity": {
+        "components": {
+            "minecraft:health": {
+                "value": 50
+            }
+        },
+        "id": "test:test_entity"
+    }
+}
