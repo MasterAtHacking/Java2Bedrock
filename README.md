@@ -76,6 +76,23 @@ Java2Bedrock is currently in active development.
 
 The project is not ready for production servers yet.
 
+
+## Installation
+
+### Requirements
+
+- Python 3.9+
+- Git
+- Minecraft Java Edition client (for testing)
+- Bedrock Dedicated Server (for future translation testing)
+
+### Clone the Repository
+
+```bash```
+git clone //
+Make sure you are in the directory.
+cd Java2Bedrock/java2bedrock
+
 ## Notice
 
 Only connect to servers you own or have explicit permission to access.
