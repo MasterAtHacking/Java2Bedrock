@@ -118,11 +118,11 @@ Java2Bedrock includes a development test client if you don’t have
 The test client is used to verify:
 - Java handshake handling
 
-— Login state handling
+- Login state handling
 
 - Configuration state handling
 
-— PLAY state transitions
+- PLAY state transitions
 
 - Packet pipeline processing
 
