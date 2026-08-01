@@ -88,27 +88,43 @@ The project is not ready for production servers yet.
 
 ### Clone the Repository
 
-Make sure you have Git and Python3
+Make sure you have Git and Python3:
+
 ```apk add git``` for linux, or
+
 ```apk add python3```, or ```brew install python3```, or
+
 ```bash```
+
 Clone the repo
+
 ```git clone https://github.com/MasterAtHacking/Java2Bedrock.git```
+
 Make sure you are in the folder
+
 ```cd Java2Bedrock/java2bedrock```
 ### Running the Runtime
+
 Start the Java2Bedrock runtime:
+
 ```python3 -m runtime.server```
+
 The runtime will start listening for Java Edition connections.
 ### Running the Test Client
-Java2Bedrock includes a development test client if you don’t have “Minecraft: Java Edition” or just want to quick test the connection.:
+Java2Bedrock includes a development test client if you don’t have 
+“Minecraft: Java Edition” or just want to quick test the connection.:
+
 ```python3 -m runtime.java.test_client```
 The test client is used to verify:
--Java handshake handling
-—Login state handling
--Configuration state handling
-—PLAY state transitions
--Packet pipeline processing
+- Java handshake handling
+
+— Login state handling
+
+- Configuration state handling
+
+— PLAY state transitions
+
+- Packet pipeline processing
 
 ### Development Status
 Java2Bedrock is currently in pre-alpha. Installation is intended for developers and testers. Features may be incomplete or change between versions.
