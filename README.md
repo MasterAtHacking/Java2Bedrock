@@ -112,9 +112,10 @@ Start the Java2Bedrock runtime:
 The runtime will start listening for Java Edition connections.
 ### Running the Test Client
 Java2Bedrock includes a development test client if you don’t have 
-“Minecraft: Java Edition” or just want to quick test the connection.:
+“Minecraft: Java Edition” or just want to quick test the connection:
 
 ```python3 -m runtime.java.test_client```
+
 The test client is used to verify:
 - Java handshake handling
 
