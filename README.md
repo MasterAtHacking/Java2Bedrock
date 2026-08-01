@@ -18,3 +18,10 @@ Nothing works yet.
 ## Notice
 
 Only connect to servers you own or have explicit permission to access.
+
+## Credits
+
+Java2Bedrock uses protocol information and research from:
+- CloudburstMC Protocol
+- GeyserMC
+- Minecraft protocol documentation
