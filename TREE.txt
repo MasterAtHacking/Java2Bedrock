@@ -1,0 +1,256 @@
+├── PROJECT_CONTEXT.md
+├── ROADMAP.md
+├── bridge.py
+├── core
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-39.pyc
+│   │   ├── handler_registry.cpython-39.pyc
+│   │   ├── logger.cpython-39.pyc
+│   │   ├── packet.cpython-39.pyc
+│   │   ├── queue.cpython-39.pyc
+│   │   ├── registry.cpython-39.pyc
+│   │   ├── translator.cpython-39.pyc
+│   │   └── validator.cpython-39.pyc
+│   ├── generators
+│   │   ├── __pycache__
+│   │   │   ├── asset_exporter.cpython-39.pyc
+│   │   │   ├── java_block_generator.cpython-39.pyc
+│   │   │   ├── java_entity_generator.cpython-39.pyc
+│   │   │   ├── java_item_generator.cpython-39.pyc
+│   │   │   └── java_project_generator.cpython-39.pyc
+│   │   ├── asset_exporter.py
+│   │   ├── java_block_generator.py
+│   │   ├── java_code
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-39.pyc
+│   │   │   │   └── block_code_generator.cpython-39.pyc
+│   │   │   ├── block_code_generator.py
+│   │   │   ├── entity_code_generator.py
+│   │   │   ├── item_code_generator.py
+│   │   │   └── mod_code_generator.py
+│   │   ├── java_entity_generator.py
+│   │   ├── java_item_generator.py
+│   │   ├── java_project_generator.py
+│   │   └── resources
+│   │       ├── __init__.py
+│   │       ├── __pycache__
+│   │       │   ├── __init__.cpython-39.pyc
+│   │       │   └── blockstate_generator.cpython-39.pyc
+│   │       └── blockstate_generator.py
+│   ├── handler_registry.py
+│   ├── loade
+│   ├── loaders
+│   │   ├── __pycache__
+│   │   │   ├── addon_loader.cpython-39.pyc
+│   │   │   ├── block_loader.cpython-39.pyc
+│   │   │   ├── block_pack_loader.cpython-39.pyc
+│   │   │   ├── block_state_loader.cpython-39.pyc
+│   │   │   ├── entity_loader.cpython-39.pyc
+│   │   │   ├── item_loader.cpython-39.pyc
+│   │   │   ├── loader_manager.cpython-39.pyc
+│   │   │   ├── manifest_loader.cpython-39.pyc
+│   │   │   ├── resource_loader.cpython-39.pyc
+│   │   │   ├── resource_pack_loader.cpython-39.pyc
+│   │   │   └── server_loader.cpython-39.pyc
+│   │   ├── addon_loader.py
+│   │   ├── block_loader.py
+│   │   ├── block_pack_loader.py
+│   │   ├── block_state_loader.py
+│   │   ├── entity_loader.py
+│   │   ├── item_loader.py
+│   │   ├── loader_manager.py
+│   │   ├── manifest_loader.py
+│   │   ├── resource_loader.py
+│   │   ├── resource_pack_loader.py
+│   │   ├── server_loader.py
+│   │   ├── test_block_pack_loader.py
+│   │   └── test_server_loader.py
+│   ├── logger.py
+│   ├── mappings
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-39.pyc
+│   │   │   ├── block_definition_builder.cpython-39.pyc
+│   │   │   ├── block_mapper.cpython-39.pyc
+│   │   │   ├── build_metadata.cpython-39.pyc
+│   │   │   ├── entity_definition_builder.cpython-39.pyc
+│   │   │   ├── entity_resource_mapper.cpython-39.pyc
+│   │   │   ├── item_definition_builder.cpython-39.pyc
+│   │   │   ├── item_resource_mapper.cpython-39.pyc
+│   │   │   ├── java_block_registry.cpython-39.pyc
+│   │   │   ├── mapping_database.cpython-39.pyc
+│   │   │   └── resource_mapper.cpython-39.pyc
+│   │   ├── block_definition_builder.py
+│   │   ├── block_mapper.py
+│   │   ├── build_metadata.py
+│   │   ├── entity_definition_builder.py
+│   │   ├── entity_resource_mapper.py
+│   │   ├── item_definition_builder.py
+│   │   ├── item_resource_mapper.py
+│   │   ├── java_block_registry.py
+│   │   ├── mapping_database.py
+│   │   └── resource_mapper.py
+│   ├── packet.py
+│   ├── processor.py
+│   ├── queue.py
+│   ├── registries
+│   │   ├── __pycache__
+│   │   │   ├── block_registry.cpython-39.pyc
+│   │   │   ├── block_state_registry.cpython-39.pyc
+│   │   │   ├── entity_registry.cpython-39.pyc
+│   │   │   ├── item_registry.cpython-39.pyc
+│   │   │   └── resource_registry.cpython-39.pyc
+│   │   ├── block_registry.py
+│   │   ├── block_state_registry.py
+│   │   ├── entity_registry.py
+│   │   ├── item_registry.py
+│   │   └── resource_registry.py
+│   ├── registry.py
+│   ├── state_names.py
+│   ├── translator.py
+│   ├── translators
+│   │   ├── __pycache__
+│   │   │   ├── block_translator.cpython-39.pyc
+│   │   │   ├── blocks.cpython-39.pyc
+│   │   │   ├── chat.cpython-39.pyc
+│   │   │   ├── entity_translator.cpython-39.pyc
+│   │   │   ├── item_translator.cpython-39.pyc
+│   │   │   └── movement.cpython-39.pyc
+│   │   ├── block_translator.py
+│   │   ├── blocks.py
+│   │   ├── chat.py
+│   │   ├── entity_translator.py
+│   │   ├── item_translator.py
+│   │   └── movement.py
+│   └── validator.py
+├── generated
+│   ├── definitions
+│   │   ├── block_definitions.json
+│   │   ├── entity_definitions.json
+│   │   └── item_definitions.json
+│   ├── java
+│   │   ├── block_translations.json
+│   │   ├── entity_translations.json
+│   │   └── item_translations.json
+│   ├── java_project
+│   │   ├── assets
+│   │   │   ├── generated
+│   │   │   │   └── blockstates
+│   │   │   │       ├── minecraft_air.json
+│   │   │   │       ├── minecraft_cobblestone.json
+│   │   │   │       ├── minecraft_dirt.json
+│   │   │   │       ├── minecraft_grass_block.json
+│   │   │   │       ├── minecraft_oak_log.json
+│   │   │   │       ├── minecraft_oak_planks.json
+│   │   │   │       ├── minecraft_stone.json
+│   │   │   │       └── test_test_block.json
+│   │   │   └── textures
+│   │   │       ├── blocks
+│   │   │       │   └── test_block.png
+│   │   │       ├── entity
+│   │   │       │   └── test_entity.png
+│   │   │       └── items
+│   │   │           └── test_item.png
+│   │   ├── blocks
+│   │   │   ├── minecraft_air.json
+│   │   │   ├── minecraft_cobblestone.json
+│   │   │   ├── minecraft_dirt.json
+│   │   │   ├── minecraft_grass_block.json
+│   │   │   ├── minecraft_oak_log.json
+│   │   │   ├── minecraft_oak_planks.json
+│   │   │   ├── minecraft_stone.json
+│   │   │   └── test_test_block.json
+│   │   ├── entities
+│   │   │   └── test_test_entity.json
+│   │   ├── items
+│   │   │   └── test_test_item.json
+│   │   └── src
+│   │       └── main
+│   │           └── java
+│   │               └── generated
+│   │                   └── blocks
+│   │                       ├── Air.java
+│   │                       ├── Cobblestone.java
+│   │                       ├── Dirt.java
+│   │                       ├── GrassBlock.java
+│   │                       ├── OakLog.java
+│   │                       ├── OakPlanks.java
+│   │                       ├── Stone.java
+│   │                       └── TestBlock.java
+│   ├── logs
+│   │   ├── 2026-08-01_10-09-24.txt
+│   │   ├── 2026-08-01_10-17-46.txt
+│   │   ├── 2026-08-01_10-27-23.txt
+│   │   ├── 2026-08-01_10-34-20.txt
+│   │   ├── 2026-08-01_10-38-06.txt
+│   │   ├── 2026-08-01_11-49-05.txt
+│   │   ├── 2026-08-01_11-54-51.txt
+│   │   └── 2026-08-01_12-16-51.txt
+│   ├── mappings
+│   │   ├── block_mappings.json
+│   │   └── resource_mappings.json
+│   ├── metadata.json
+│   └── registries
+│       ├── block_registry.json
+│       ├── block_state_registry.json
+│       ├── entity_registry.json
+│       ├── item_registry.json
+│       └── resource_registry.json
+├── json_test.py
+├── network
+│   ├── client.py
+│   └── server.py
+├── packets
+│   ├── __pycache__
+│   │   └── java_packets.cpython-39.pyc
+│   └── java_packets.py
+├── project_tree.md
+├── runtime
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-39.pyc
+│   │   ├── packet_adapter.cpython-39.pyc
+│   │   ├── packet_pipeline.cpython-39.pyc
+│   │   ├── server.cpython-39.pyc
+│   │   ├── session.cpython-39.pyc
+│   │   ├── session_manager.cpython-39.pyc
+│   │   └── state.cpython-39.pyc
+│   ├── bedrock
+│   │   ├── __init__.py
+│   │   ├── client.py
+│   │   ├── packet_reader.py
+│   │   └── packet_writer.py
+│   ├── java
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-39.pyc
+│   │   │   ├── configuration.cpython-39.pyc
+│   │   │   ├── connection.cpython-39.pyc
+│   │   │   ├── handshake.cpython-39.pyc
+│   │   │   ├── listener.cpython-39.pyc
+│   │   │   ├── login.cpython-39.pyc
+│   │   │   ├── packet_reader.cpython-39.pyc
+│   │   │   ├── packet_writer.cpython-39.pyc
+│   │   │   ├── protocol.cpython-39.pyc
+│   │   │   └── test_client.cpython-39.pyc
+│   │   ├── configuration.py
+│   │   ├── connection.py
+│   │   ├── handshake.py
+│   │   ├── listener.py
+│   │   ├── login.py
+│   │   ├── packet_reader.py
+│   │   ├── packet_writer.py
+│   │   ├── protocol.py
+│   │   └── test_client.py
+│   ├── packet_adapter.py
+│   ├── packet_pipeline.py
+│   ├── server.py
+│   ├── session.py
+│   ├── session_manager.py
+│   └── state.py
+├── test.py
+└── translator.py
+
+46 directories, 209 files
