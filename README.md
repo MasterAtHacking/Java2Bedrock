@@ -4,6 +4,12 @@ Java2Bedrock is an experimental Minecraft compatibility layer that aims to allow
 
 The project focuses on protocol translation, packet handling, registry generation, and compatibility between the Java and Bedrock ecosystems.
 
+## Repository
+
+Source code:
+
+https://github.com/MasterAtHacking/Java2Bedrock
+
 ## Goals
 
 - Java Edition client compatibility
@@ -45,23 +51,24 @@ Currently being developed:
 
 Java2Bedrock is designed as a modular translation system:
 
+```text
 Java Client
-|
-v
+     |
+     v
 Java Protocol Handler
-|
-v
+     |
+     v
 Packet Pipeline
-|
-v
+     |
+     v
 Translator Layer
-|
-v
+     |
+     v
 Bedrock Protocol Handler
-|
-v
+     |
+     v
 Bedrock Dedicated Server
-
+```
 
 Supporting systems:
 
@@ -74,8 +81,7 @@ Supporting systems:
 
 Java2Bedrock is currently in active development.
 
-The project is not ready for production servers yet.
-
+The project is intended for development, testing, and research purposes.
 
 ## Installation
 
@@ -86,56 +92,125 @@ The project is not ready for production servers yet.
 - Minecraft Java Edition client (for testing)
 - Bedrock Dedicated Server (for future translation testing)
 
+### Installing Git
+
+Linux:
+
+Alpine:
+```bash
+apk add git
+```
+
+Ubuntu/Debian:
+```bash
+sudo apt install git
+```
+
+Fedora:
+```bash
+sudo dnf install git
+```
+
+Arch:
+```bash
+sudo pacman -S git
+```
+
+Homebrew:
+```bash
+brew install git
+```
+
+Windows:
+
+Install Git from:
+
+https://git-scm.com/
+
+### Installing Python 3
+
+Linux:
+
+Alpine:
+```bash
+apk add python3
+```
+
+Ubuntu/Debian:
+```bash
+sudo apt install -y python3 python3-pip
+```
+
+Fedora:
+```bash
+sudo dnf install -y python3 python3-pip
+```
+
+Arch/Manjaro:
+```bash
+sudo pacman -S python python-pip
+```
+
+Homebrew:
+```bash
+brew install python3
+```
+
+Windows:
+
+Install Python from:
+
+https://www.python.org/downloads/
+
 ### Clone the Repository
 
-Make sure you have Git and Python3:
+```bash
+git clone https://github.com/MasterAtHacking/Java2Bedrock.git
+```
 
-To install ”Git”
+Enter the project folder:
 
-```apk add git``` on linux, ```sudo apt install git``` on Ubuntu, ```sudo dnf install git``` on Fedora, ```sudo apt-get install git``` on Debian, ```sudo pacman -S git``` on Arch, and if you have HomeBrew, use ```brew install git```. On Windows, you can install Git using the Git installer. 
-Go to this link for help with installing git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+```bash
+cd Java2Bedrock
+```
 
-
-To install ”Python3”
-
-```apk add python3``` on Linux,  ```udo apt install -y python3 python3-pip``` on Ubuntu and Debian, ```sudo dnf install -y python3 python3-pip``` on Fedora, ```sudo pacman -S python python-pip``` on Arch and Manjaro, and if you have HomeBrew, use ```brew install python3```. On Windows, install Python from the Microsoft Store / python.org installer.
-Go to this link for help with installing python3: https://www.python.org/downloads/
-
-```bash```
-
-Clone the repo
-
-```git clone https://github.com/MasterAtHacking/Java2Bedrock.git```
-
-Make sure you are in the folder
-
-```cd Java2Bedrock/java2bedrock```
-### Running the Runtime
+## Running the Runtime
 
 Start the Java2Bedrock runtime:
 
-```python3 -m runtime.server```
+```bash
+python3 -m runtime.server
+```
 
 The runtime will start listening for Java Edition connections.
-### Running the Test Client
-Java2Bedrock includes a development test client if you don’t have 
-“Minecraft: Java Edition” or just want to quick test the connection:
 
-```python3 -m runtime.java.test_client```
+## Running the Test Client
 
-The test client is used to verify:
+Java2Bedrock includes a development test client for testing the connection:
+
+```bash
+python3 -m runtime.java.test_client
+```
+
+The test client verifies:
+
 - Java handshake handling
-
 - Login state handling
-
 - Configuration state handling
-
 - PLAY state transitions
-
 - Packet pipeline processing
 
-### Development Status
-Java2Bedrock is currently in pre-alpha. Installation is intended for developers and testers. Features may be incomplete or change between versions.
+## Version
+
+Current version:
+
+0.0.1-alpha
+
+## Development Status
+
+Java2Bedrock is currently in pre-alpha.
+
+Installation is intended for developers and testers. Features may be incomplete or change between versions.
 
 ## Notice
 
