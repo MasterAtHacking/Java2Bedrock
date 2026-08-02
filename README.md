@@ -171,7 +171,7 @@ git clone https://github.com/MasterAtHacking/Java2Bedrock.git
 Enter the project folder:
 
 ```bash
-cd Java2Bedrock
+cd Java2Bedrock/java2bedrock
 ```
 
 ## Running the Runtime
