@@ -90,9 +90,16 @@ The project is not ready for production servers yet.
 
 Make sure you have Git and Python3:
 
-```apk add git``` for linux, or
+To install ”Git”
 
-```apk add python3```, or ```brew install python3```, or
+```apk add git``` on linux, ```sudo apt install git``` on Ubuntu, ```sudo dnf install git``` on Fedora, ```sudo apt-get install git``` on Debian, ```sudo pacman -S git``` on Arch, and if you have HomeBrew, use ```brew install git```. On Windows, you can install Git using the Git installer. 
+Go to this link for help with installing git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+
+To install ”Python3”
+
+```apk add python3``` on Linux,  ```udo apt install -y python3 python3-pip``` on Ubuntu and Debian, ```sudo dnf install -y python3 python3-pip``` on Fedora, ```sudo pacman -S python python-pip``` on Arch and Manjaro, and if you have HomeBrew, use ```brew install python3```. On Windows, install Python from the Microsoft Store / python.org installer.
+Go to this link for help with installing python3: https://www.python.org/downloads/
 
 ```bash```
 
