@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "generated:block/test_test_block"
+        }
+    }
+}

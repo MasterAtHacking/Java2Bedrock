@@ -1,0 +1,12 @@
+{
+    "minecraft:air": [],
+    "minecraft:cobblestone": [],
+    "minecraft:dirt": [],
+    "minecraft:grass_block": [],
+    "minecraft:oak_log": [],
+    "minecraft:oak_planks": [],
+    "minecraft:stone": [],
+    "test:test_block": [
+        "textures/blocks/test_block.png"
+    ]
+}

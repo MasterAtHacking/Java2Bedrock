@@ -1,0 +1,223 @@
+[07:31:23] Logging started
+[07:31:23] 
+[07:31:23] ==============================
+[07:31:23]       Java2Bedrock Runtime
+[07:31:23] ==============================
+[07:31:23] 
+[07:31:23] Java listener started on 0.0.0.0:25565
+[07:31:55] 
+[07:31:55] ========================================
+[07:31:55]  Session #1
+[07:31:55]  Client: 127.0.0.1:64363
+[07:31:55] ========================================
+[07:31:55] 
+[07:31:55] Active sessions: 1
+[07:31:55] [Session #1] Session started
+[07:31:55] [Session #1] Java packet received
+[07:31:55] [Session #1] ID: 0
+[07:31:55] [Session #1] ========== HANDSHAKE ==========
+[07:31:55] [Session #1] Protocol: 772
+[07:31:55] [Session #1] Address: localhost
+[07:31:55] [Session #1] Port: 25565
+[07:31:55] [Session #1] Next state: 2
+[07:31:55] [Session #1] ===============================
+[07:31:55] [Session #1] Switching to LOGIN state
+[07:31:55] [Session #1] Java packet received
+[07:31:55] [Session #1] ID: 0
+[07:31:55] [Session #1] Login packet: 0
+[07:31:55] [Session #1] Received Login Start
+[07:31:55] [Session #1] Player: Technoblade
+[07:31:55] [Session #1] Sending Login Success...
+[07:31:55] [Session #1] Login Success sent.
+[07:32:33] [Session #1] Socket error: [Errno 104] Connection reset by peer
+[07:32:33] [Session #1] Session closed
+[07:32:33] Active sessions: 0
+[07:33:03] 
+[07:33:03] ========================================
+[07:33:03]  Session #2
+[07:33:03]  Client: 127.0.0.1:64365
+[07:33:03] ========================================
+[07:33:03] 
+[07:33:03] Active sessions: 1
+[07:33:03] [Session #2] Session started
+[07:33:03] [Session #2] Java packet received
+[07:33:03] [Session #2] ID: 0
+[07:33:03] [Session #2] ========== HANDSHAKE ==========
+[07:33:03] [Session #2] Protocol: 772
+[07:33:03] [Session #2] Address: localhost
+[07:33:03] [Session #2] Port: 25565
+[07:33:03] [Session #2] Next state: 2
+[07:33:03] [Session #2] ===============================
+[07:33:03] [Session #2] Switching to LOGIN state
+[07:33:03] [Session #2] Java packet received
+[07:33:03] [Session #2] ID: 0
+[07:33:03] [Session #2] Login packet: 0
+[07:33:03] [Session #2] Received Login Start
+[07:33:03] [Session #2] Player: no
+[07:33:03] [Session #2] Sending Login Success...
+[07:33:03] [Session #2] Login Success sent.
+[07:33:20] [Session #2] Socket error: [Errno 104] Connection reset by peer
+[07:33:20] [Session #2] Session closed
+[07:33:20] Active sessions: 0
+[07:33:39] 
+[07:33:39] ========================================
+[07:33:39]  Session #3
+[07:33:39]  Client: 127.0.0.1:64366
+[07:33:39] ========================================
+[07:33:39] 
+[07:33:39] Active sessions: 1
+[07:33:39] [Session #3] Session started
+[07:33:39] [Session #3] Java packet received
+[07:33:39] [Session #3] ID: 0
+[07:33:39] [Session #3] ========== HANDSHAKE ==========
+[07:33:39] [Session #3] Protocol: 772
+[07:33:39] [Session #3] Address: localhost
+[07:33:39] [Session #3] Port: 25565
+[07:33:39] [Session #3] Next state: 2
+[07:33:39] [Session #3] ===============================
+[07:33:39] [Session #3] Switching to LOGIN state
+[07:33:39] [Session #3] Java packet received
+[07:33:39] [Session #3] ID: 0
+[07:33:39] [Session #3] Login packet: 0
+[07:33:39] [Session #3] Received Login Start
+[07:33:39] [Session #3] Player: fff
+[07:33:39] [Session #3] Sending Login Success...
+[07:33:39] [Session #3] Login Success sent.
+[07:33:43] [Session #3] Socket error: [Errno 104] Connection reset by peer
+[07:33:43] [Session #3] Session closed
+[07:33:43] Active sessions: 0
+[07:47:43] 
+[07:47:43] ========================================
+[07:47:43]  Session #4
+[07:47:43]  Client: 127.0.0.1:64470
+[07:47:43] ========================================
+[07:47:43] 
+[07:47:43] Active sessions: 1
+[07:47:43] [Session #4] Session started
+[07:47:43] [Session #4] Java packet received
+[07:47:43] [Session #4] ID: 0
+[07:47:43] [Session #4] ========== HANDSHAKE ==========
+[07:47:43] [Session #4] Protocol: 772
+[07:47:43] [Session #4] Address: localhost
+[07:47:43] [Session #4] Port: 25565
+[07:47:43] [Session #4] Next state: 2
+[07:47:43] [Session #4] ===============================
+[07:47:43] [Session #4] Switching to LOGIN state
+[07:47:43] [Session #4] Java packet received
+[07:47:43] [Session #4] ID: 0
+[07:47:43] [Session #4] Login packet: 0
+[07:47:43] [Session #4] Received Login Start
+[07:47:43] [Session #4] Player: python3 bot.py
+[07:47:43] [Session #4] Sending Login Success...
+[07:47:43] [Session #4] Login Success sent.
+[07:48:26] [Session #4] Socket error: Connection closed while reading VarInt
+[07:48:26] [Session #4] Session closed
+[07:48:26] Active sessions: 0
+[07:48:41] 
+[07:48:41] ========================================
+[07:48:41]  Session #5
+[07:48:41]  Client: 127.0.0.1:64472
+[07:48:41] ========================================
+[07:48:41] 
+[07:48:41] Active sessions: 1
+[07:48:41] [Session #5] Session started
+[07:48:41] [Session #5] Java packet received
+[07:48:41] [Session #5] ID: 0
+[07:48:41] [Session #5] ========== HANDSHAKE ==========
+[07:48:41] [Session #5] Protocol: 772
+[07:48:41] [Session #5] Address: localhost
+[07:48:41] [Session #5] Port: 25565
+[07:48:41] [Session #5] Next state: 2
+[07:48:41] [Session #5] ===============================
+[07:48:41] [Session #5] Switching to LOGIN state
+[07:48:41] [Session #5] Java packet received
+[07:48:41] [Session #5] ID: 0
+[07:48:41] [Session #5] Login packet: 0
+[07:48:41] [Session #5] Received Login Start
+[07:48:41] [Session #5] Player: steve
+[07:48:41] [Session #5] Sending Login Success...
+[07:48:41] [Session #5] Login Success sent.
+[07:50:22] [Session #5] Socket error: Connection closed while reading VarInt
+[07:50:22] [Session #5] Session closed
+[07:50:22] Active sessions: 0
+[07:55:14] 
+[07:55:14] ========================================
+[07:55:14]  Session #6
+[07:55:14]  Client: 127.0.0.1:64520
+[07:55:14] ========================================
+[07:55:14] 
+[07:55:14] Active sessions: 1
+[07:55:14] [Session #6] Session started
+[07:55:14] [Session #6] Java packet received
+[07:55:14] [Session #6] ID: 0
+[07:55:14] [Session #6] ========== HANDSHAKE ==========
+[07:55:14] [Session #6] Protocol: 772
+[07:55:14] [Session #6] Address: localhost
+[07:55:14] [Session #6] Port: 25565
+[07:55:14] [Session #6] Next state: 2
+[07:55:14] [Session #6] ===============================
+[07:55:14] [Session #6] Switching to LOGIN state
+[07:55:14] [Session #6] Java packet received
+[07:55:14] [Session #6] ID: 0
+[07:55:14] [Session #6] Login packet: 0
+[07:55:14] [Session #6] Received Login Start
+[07:55:14] [Session #6] Player: Patrick huang
+[07:55:14] [Session #6] Sending Login Success...
+[07:55:14] [Session #6] Login Success sent.
+[07:55:41] [Session #6] Socket error: Connection closed while reading VarInt
+[07:55:41] [Session #6] Session closed
+[07:55:41] Active sessions: 0
+[07:55:55] 
+[07:55:55] ========================================
+[07:55:55]  Session #7
+[07:55:55]  Client: 127.0.0.1:64521
+[07:55:55] ========================================
+[07:55:55] 
+[07:55:55] Active sessions: 1
+[07:55:55] [Session #7] Session started
+[07:55:55] [Session #7] Java packet received
+[07:55:55] [Session #7] ID: 0
+[07:55:55] [Session #7] ========== HANDSHAKE ==========
+[07:55:55] [Session #7] Protocol: 772
+[07:55:55] [Session #7] Address: localhost
+[07:55:55] [Session #7] Port: 25565
+[07:55:55] [Session #7] Next state: 2
+[07:55:55] [Session #7] ===============================
+[07:55:55] [Session #7] Switching to LOGIN state
+[07:55:55] [Session #7] Java packet received
+[07:55:55] [Session #7] ID: 0
+[07:55:55] [Session #7] Login packet: 0
+[07:55:55] [Session #7] Received Login Start
+[07:55:55] [Session #7] Player: patrick huang, my friend
+[07:55:55] [Session #7] Sending Login Success...
+[07:55:55] [Session #7] Login Success sent.
+[07:58:58] [Session #7] Socket error: Connection closed while reading VarInt
+[07:58:58] [Session #7] Session closed
+[07:58:58] Active sessions: 0
+[08:01:54] 
+[08:01:54] ========================================
+[08:01:54]  Session #8
+[08:01:54]  Client: 127.0.0.1:64541
+[08:01:54] ========================================
+[08:01:54] 
+[08:01:54] Active sessions: 1
+[08:01:54] [Session #8] Session started
+[08:01:54] [Session #8] Java packet received
+[08:01:54] [Session #8] ID: 0
+[08:01:54] [Session #8] ========== HANDSHAKE ==========
+[08:01:54] [Session #8] Protocol: 772
+[08:01:54] [Session #8] Address: localhost
+[08:01:54] [Session #8] Port: 25565
+[08:01:54] [Session #8] Next state: 2
+[08:01:54] [Session #8] ===============================
+[08:01:54] [Session #8] Switching to LOGIN state
+[08:01:54] [Session #8] Java packet received
+[08:01:54] [Session #8] ID: 0
+[08:01:54] [Session #8] Login packet: 0
+[08:01:54] [Session #8] Received Login Start
+[08:01:54] [Session #8] Player: m
+[08:01:54] [Session #8] Sending Login Success...
+[08:01:54] [Session #8] Login Success sent.
+[08:02:05] [Session #8] Socket error: Connection closed while reading VarInt
+[08:02:05] [Session #8] Session closed
+[08:02:05] Active sessions: 0

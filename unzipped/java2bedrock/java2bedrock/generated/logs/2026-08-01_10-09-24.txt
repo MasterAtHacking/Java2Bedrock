@@ -1,0 +1,2 @@
+[10:09:24] Logging started
+[10:09:33] Hello Java2Bedrock

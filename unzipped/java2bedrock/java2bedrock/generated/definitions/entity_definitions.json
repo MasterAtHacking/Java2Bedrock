@@ -1,0 +1,16 @@
+{
+    "test:test_entity": {
+        "id": "test:test_entity",
+        "metadata": {
+            "components": {
+                "minecraft:health": {
+                    "value": 50
+                }
+            },
+            "id": "test:test_entity"
+        },
+        "resources": [
+            "textures/entity/test_entity.png"
+        ]
+    }
+}

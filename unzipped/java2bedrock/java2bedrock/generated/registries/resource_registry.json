@@ -1,0 +1,11 @@
+{
+    "textures/blocks/test_block.png": {
+        "path": "/root/test_server/worlds/Lucky Block SMP/resource_packs/TestResources/textures/blocks/test_block.png"
+    },
+    "textures/entity/test_entity.png": {
+        "path": "/root/test_server/worlds/Lucky Block SMP/resource_packs/TestResources/textures/entity/test_entity.png"
+    },
+    "textures/items/test_item.png": {
+        "path": "/root/test_server/worlds/Lucky Block SMP/resource_packs/TestResources/textures/items/test_item.png"
+    }
+}

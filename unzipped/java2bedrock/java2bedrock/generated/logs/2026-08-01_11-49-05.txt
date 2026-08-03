@@ -1,0 +1,41 @@
+[11:49:05] Logging started
+[11:49:05] 
+[11:49:05] ==============================
+[11:49:05]       Java2Bedrock Runtime
+[11:49:05] ==============================
+[11:49:05] 
+[11:49:05] Java listener started on 0.0.0.0:25565
+[11:49:10] 
+[11:49:10] ========================================
+[11:49:10]  Session #1
+[11:49:10]  Client: 127.0.0.1:65473
+[11:49:10] ========================================
+[11:49:10] 
+[11:49:10] Active sessions: 1
+[11:49:10] [Session #1] Session started
+[11:49:10] [Session #1] Java packet received
+[11:49:10] [Session #1] ID: 0
+[11:49:10] [Session #1] ========== HANDSHAKE ==========
+[11:49:10] [Session #1] Protocol: 772
+[11:49:10] [Session #1] Address: localhost
+[11:49:10] [Session #1] Port: 25565
+[11:49:10] [Session #1] Next state: 2
+[11:49:10] [Session #1] ===============================
+[11:49:10] [Session #1] Switching to LOGIN state
+[11:49:11] [Session #1] Java packet received
+[11:49:11] [Session #1] ID: 0
+[11:49:11] [Session #1] Login packet: 0
+[11:49:11] [Session #1] Received Login Start
+[11:49:11] [Session #1] Player: Unknown
+[11:49:11] [Session #1] Sending Login Success...
+[11:49:11] [Session #1] Login Success sent.
+[11:49:11] [Session #1] Java packet received
+[11:49:11] [Session #1] ID: 3
+[11:49:11] [Session #1] Login packet: 3
+[11:49:11] [Session #1] Login Acknowledged received
+[11:49:11] [Session #1] Switching to CONFIGURATION state
+[11:51:12] 
+[11:51:12] Stopping Java2Bedrock...
+[11:51:12] Active sessions: 0
+[11:51:12] [Session #1] Session closed
+[11:51:12] Runtime stopped.
